@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="flickity.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="static/bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="static/flickity/flickity.css">
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-lit">
-        <a class="navbar-brand" href="#">
-            <img src="logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        <a class="navbar-brand" href="index.html">
+            <img src="static/img/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
             BookPublisher
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MainNavbar"
+            aria-controls="MainNavbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse navbar-container" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse navbar-container" id="MainNavbar">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -61,21 +61,21 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="jumbo/jumbo1.jpg" alt="First slide">
+                <img class="d-block w-100" src="static/img/jumbo/jumbo1.jpg" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>K-ON! Season 1</h5>
                     <p>...</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="jumbo/jumbo2.jpg" alt="Second slide">
+                <img class="d-block w-100" src="static/img/jumbo/jumbo2.jpg" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>K-ON!! Season 2</h5>
                     <p>...</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="jumbo/jumbo3.jpg" alt="Third slide">
+                <img class="d-block w-100" src="static/img/jumbo/jumbo3.jpg" alt="Third slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>K-ON! Movie</h5>
                     <p>...</p>
@@ -93,45 +93,112 @@
     </div>
 
     <div class="container mt-3">
-        <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
+        <!-- New Release Carousel -->
+        <div class="section">
+            <img src="static/img/new.svg" width="250" height="50" alt="">
+        </div>
+        <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true }'> 
             <a href="#">
                 <div class="gallery-cell">
-                    <img src="books/bnha1.jpg" alt="">
+                    <img src="static/img/books/bnha1.jpg" alt="">
                     <div class="after">
                         <span class="content">Boku no Hero Academia 1</span>
                     </div>
                 </div>
             </a>
-            <a href="#"><div class="gallery-cell"><img src="books/bnha2.jpg" alt=""></div></a>
-            <a href="#"><div class="gallery-cell"><img src="books/bnha3.jpg" alt=""></div></a>
-            <a href="#"><div class="gallery-cell"><img src="books/bnha4.jpg" alt=""></div></a>
-            <a href="#"><div class="gallery-cell"><img src="books/bnha5.jpg" alt=""></div></a>
-            <a href="#"><div class="gallery-cell"><img src="books/bnha6.jpg" alt=""></div></a>
-            <a href="#"><div class="gallery-cell"><img src="books/bnha7.jpg" alt=""></div></a>
-            <a href="#"><div class="gallery-cell"><img src="books/bnha8.jpg" alt=""></div></a>
+            <a href="#">
+                <div class="gallery-cell">
+                    <img src="static/img/books/bnha2.jpg" alt="">
+                    <div class="after">
+                        <span class="content">Boku no Hero Academia 2</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="gallery-cell">
+                    <img src="static/img/books/bnha3.jpg" alt="">
+                    <div class="after">
+                        <span class="content">Boku no Hero Academia 3</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="gallery-cell">
+                    <img src="static/img/books/bnha4.jpg" alt="">
+                    <div class="after">
+                        <span class="content">Boku no Hero Academia 4</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="gallery-cell">
+                    <img src="static/img/books/bnha5.jpg" alt="">
+                    <div class="after">
+                        <span class="content">Boku no Hero Academia 5</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="gallery-cell">
+                    <img src="static/img/books/bnha6.jpg" alt="">
+                    <div class="after">
+                        <span class="content">Boku no Hero Academia 6</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="gallery-cell">
+                    <img src="static/img/books/bnha7.jpg" alt="">
+                    <div class="after">
+                        <span class="content">Boku no Hero Academia 7</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="gallery-cell">
+                    <img src="static/img/books/bnha8.jpg" alt="">
+                    <div class="after">
+                        <span class="content">Boku no Hero Academia 8</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="gallery-cell">
+                    <img src="static/img/books/bnha9.jpg" alt="">
+                    <div class="after">
+                        <span class="content">Boku no Hero Academia 9</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="gallery-cell">
+                    <img src="static/img/books/bnha10.jpg" alt="">
+                    <div class="after">
+                        <span class="content">Boku no Hero Academia 10</span>
+                    </div>
+                </div>
+            </a>
         </div>
 
         <div class="row justify-content-center mt-3">
             <div class="col-md-4">
                 <div id="published-last-week" class="card">
+                    <img src="static/img/new.svg" width="250" height="50" alt="">
                     <div class="card-body">
-                        <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+                        <!-- Navigation -->
+                        <ul class="nav nav-justified nav-tabs mb-3" id="myTab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="comics-tab" data-toggle="tab" href="#comics" role="tab"
-                                    aria-controls="comics" aria-selected="true">Comics</a>
+                                <a class="nav-link active" id="released-tab" data-toggle="tab" href="#released" role="tab"
+                                    aria-controls="released" aria-selected="true">Released</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="novels-tab" data-toggle="tab" href="#novels" role="tab"
-                                    aria-controls="novels" aria-selected="false">Novels</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="others-tab" data-toggle="tab" href="#others" role="tab"
-                                    aria-controls="others" aria-selected="false">Others</a>
+                                <a class="nav-link" id="reprint-tab" data-toggle="tab" href="#reprint" role="tab"
+                                    aria-controls="reprint" aria-selected="false">Reprint</a>
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="comics" role="tabpanel"
-                                aria-labelledby="comics-tab">
+                            <!-- Release Last Week Section -->
+                            <div class="tab-pane fade show active" id="released" role="tabpanel" aria-labelledby="released-tab">
                                 <ul class="list-unstyled">
                                     <li class="media">
                                         <img class="mr-3" src="books/k1.jpg" alt="Book cover" style="width: 5em">
@@ -159,34 +226,33 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="tab-pane fade" id="novels" role="tabpanel" aria-labelledby="novels-tab">
-                               
-
-                            </div>
-                            <div class="tab-pane fade" id="others" role="tabpanel" aria-labelledby="others-tab">
-                                <div class="book-list">
-                                    <img src="book.jpg" alt="">
-                                    <h6>CHiCO With HoneyWorks</h6>
-                                </div>
-                                <div class="book-list">
-                                    <img src="book.jpg" alt="">
-                                    <h6>CHiCO With HoneyWorks</h6>
-                                </div>
-                                <div class="book-list">
-                                    <img src="book.jpg" alt="">
-                                    <h6>CHiCO With HoneyWorks</h6>
-                                </div>
-                                <div class="book-list">
-                                    <img src="book.jpg" alt="">
-                                    <h6>CHiCO With HoneyWorks</h6>
+                            <!-- Reprint -->
+                            <div class="tab-pane fade" id="reprint" role="tabpanel" aria-labelledby="reprint-tab">
+                                <div class="flex-container">
+                                    <img src="static/img/books/gin1.jpg" alt="" data-toggle="tooltip" data-placement="top" title="Gintama 1">
+                                    <img src="static/img/books/bnha1.jpg" alt="">
+                                    <img src="static/img/books/bnha2.jpg" alt="">
+                                    <img src="static/img/books/bnha3.jpg" alt="">
+                                    <img src="static/img/books/bnha4.jpg" alt="">
+                                    <img src="static/img/books/bnha5.jpg" alt="">
+                                    <img src="static/img/books/bnha6.jpg" alt="">
+                                    <img src="static/img/books/bnha7.jpg" alt="">
+                                    <img src="static/img/books/bnha8.jpg" alt="">
+                                    <img src="static/img/books/bnha9.jpg" alt="">
+                                    <img src="static/img/books/k1.jpg" alt="">
+                                    <img src="static/img/books/k2.jpg" alt="">
+                                    <img src="static/img/books/k3.jpg" alt="">
+                                    <img src="static/img/books/k4.jpg" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="col-md-8">
-                <div class="card-body text-center">
+                <!-- Category -->
+                <div class="flex-container">
                     <div class="kind">
                         Comic
                     </div>
@@ -213,11 +279,27 @@
                     </div>
                 </div>
 
-                <div id="news" class="card">
+                <!-- News Update! -->
+                <div id="news" class="card mt-3">
                     <div class="card-header">
-                        <h1>Side</h1>
+                        <h3>New Release! The First Volume of Gintama</h3>
                     </div>
-                    <img src="jumbo/jumbo1.jpg" alt="" class="card-img-top">
+                    <img src="static/img/jumbo/gin1.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit ligula sodales in,
+                            justo interdum scelerisque venenatis hac mauris morbi nisl accumsan,
+                            duis nascetur quisque etiam eget nec urna lobortis euismod.
+                            Per eros in venenatis volutpat lobortis fusce diam cum ac nisl ornare laoreet imperdiet
+                            euismod class nullam.
+                        </p>
+                    </div>
+                </div>
+                <div id="news" class="card mt-3">
+                    <div class="card-header">
+                        <h3>New Release! The First Volume of Gintama</h3>
+                    </div>
+                    <img src="static/img/jumbo/gin1.png" alt="" class="card-img-top">
                     <div class="card-body">
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipiscing elit ligula sodales in,
@@ -289,10 +371,15 @@
         </div>
     </footer>
 
-    <script src="bootstrap-4.3.1-dist/js/jquery-3.4.1.min.js"></script>
-    <script src="bootstrap-4.3.1-dist/js/popper.min.js"></script>
-    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-    <script src="flickity.pkgd.min.js"></script>
+    <script src="static/bootstrap-4.3.1-dist/js/jquery-3.4.1.min.js"></script>
+    <script src="static/bootstrap-4.3.1-dist/js/popper.min.js"></script>
+    <script src="static/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="static/flickity/flickity.pkgd.min.js"></script>
+    <script>
+    $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 </body>
 
 </html>
