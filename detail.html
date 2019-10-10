@@ -48,44 +48,317 @@
         </div>
     </nav>
 
-    <div class="container mt-3">
-        <div class="row">
-            <div class="col-md-3">
-
-            </div>
-            <div class="col-md-9">
-                <div class="row">
-                    <div class="col-md-4">
+    <div class="container-index bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card-body">
                         <img src="static/img/books/oregairu1.jpg" alt="" style="width: 100%">
+                        <button class="btn btn-lit btn-block mt-3" data-toggle="modal" data-target="#exampleModalCenter">Check Stock in Book Store</button>
                     </div>
-                    <div class="col-md-8">
-                        <h2>Oregairu 1</h2>
-                        <table class="table table-responsive">
-                            <tr>
-                                <th>Arist</th>
-                                <td>: Wataru Watari</td>
-                            </tr>
-                            <tr>
-                                <th>Pages</th>
-                                <td>: 213</td>
-                            </tr>
-                            <tr>
-                                <th>Dimension</th>
-                                <td>: 14cm x 11cm</td>
-                            </tr>
-                            <tr>
-                                <th>Price</th>
-                                <td>: $13</td>
-                            </tr>
-                        </table>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <div id="information">
+                            <h2 class="font-weight-bold">Oregairu 1</h2>
+                            <hr>
+                            <!-- <table class="table">
+                                <tr>
+                                    <th>Artist</th>
+                                    <td>: Wataru Watari</td>
+                                </tr>
+                                <tr>
+                                    <th>Pages</th>
+                                    <td>: 213</td>
+                                </tr>
+                                <tr>
+                                    <th>Dimension</th>
+                                    <td>: 14cm x 11cm</td>
+                                </tr>
+                                <tr>
+                                    <th>Genre</th>
+                                    <td>: Slice of Life, Romance, School Life</td>
+                                </tr>
+                                <tr>
+                                    <th>Price</th>
+                                    <td>: $13</td>
+                                </tr>
+                            </table> -->
+                            
+                            <div id="book-info">
+                                <label for="artist">Artist</label>
+                                <span>: Wataru Watari</span>
+                                <br>
+                                <label for="pages">Pages</label>
+                                <span>: 213 pages</span>
+                                <br>
+                                <label for="dimension">Dimension</label>
+                                <span>: 21cm x 11cm</span>
+                                <br>
+                                <label for="genre">Genre</label>
+                                <span>: Slice of Life, Romance, School Life</span>
+                                <br>
+                                <label for="price">Price</label>
+                                <span>: $13</span>
+                                <br>
+                                <label for="sinopsis">Sinopsis :</label>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Aliquam sunt eum officiis eaque fugiat illum, sed modi excepturi voluptates aperiam autem nemo laboriosam,
+                                    quibusdam velit fugit alias optio tempora architecto!
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repellat at,
+                                    modi animi facilis suscipit amet iusto obcaecati minima enim adipisci sunt,
+                                    sed ab dolores est pariatur culpa praesentium iure!
+                                </p>
+                                <div class="alert alert-info" role="alert">
+                                    This is a info alert—check it out!
+                                </div>
+                            </div>
+                        </div>
+                        <div id="another-volume" class="mt-5">
+                            <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true }'> 
+                                <a href="#">
+                                    <div class="gallery-cell">
+                                        <img src="static/img/books/oregairu2.jpg" alt="">
+                                        <div class="after">
+                                            <span class="content">Oregairu 2</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="gallery-cell">
+                                        <img src="static/img/books/oregairu3.jpg" alt="">
+                                        <div class="after">
+                                            <span class="content">Oregairu 3</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="gallery-cell">
+                                        <img src="static/img/books/oregairu4.jpg" alt="">
+                                        <div class="after">
+                                            <span class="content">Oregairu 4</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="gallery-cell">
+                                        <img src="static/img/books/oregairu5.jpg" alt="">
+                                        <div class="after">
+                                            <span class="content">Oregairu 5</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="gallery-cell">
+                                        <img src="static/img/books/oregairu6.jpg" alt="">
+                                        <div class="after">
+                                            <span class="content">Oregairu 6</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="gallery-cell">
+                                        <img src="static/img/books/oregairu7.jpg" alt="">
+                                        <div class="after">
+                                            <span class="content">Oregairu 7</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="gallery-cell">
+                                        <img src="static/img/books/oregairu8.jpg" alt="">
+                                        <div class="after">
+                                            <span class="content">Oregairu 8</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="gallery-cell">
+                                        <img src="static/img/books/oregairu9.jpg" alt="">
+                                        <div class="after">
+                                            <span class="content">Oregairu 9</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="gallery-cell">
+                                        <img src="static/img/books/oregairu10.jpg" alt="">
+                                        <div class="after">
+                                            <span class="content">Oregairu 10</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="gallery-cell">
+                                        <img src="static/img/books/oregairu11.jpg" alt="">
+                                        <div class="after">
+                                            <span class="content">Oregairu 11</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="gallery-cell">
+                                        <img src="static/img/books/oregairu12.jpg" alt="">
+                                        <div class="after">
+                                            <span class="content">Oregairu 12</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="gallery-cell">
+                                        <img src="static/img/books/oregairu13.jpg" alt="">
+                                        <div class="after">
+                                            <span class="content">Oregairu 13</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="gallery-cell">
+                                        <img src="static/img/books/oregairu14.jpg" alt="">
+                                        <div class="after">
+                                            <span class="content">Oregairu 14</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </div>
+            <hr>
+            <div id="reccomendation" class="col-md-12">
+                <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
+                    <a href="#">
+                        <div class="gallery-cell">
+                            <img src="static/img/books/oregairu2.jpg" alt="">
+                            <div class="after">
+                                <span class="content">Oregairu 2</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="gallery-cell">
+                            <img src="static/img/books/oregairu3.jpg" alt="">
+                            <div class="after">
+                                <span class="content">Oregairu 3</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="gallery-cell">
+                            <img src="static/img/books/oregairu4.jpg" alt="">
+                            <div class="after">
+                                <span class="content">Oregairu 4</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="gallery-cell">
+                            <img src="static/img/books/oregairu5.jpg" alt="">
+                            <div class="after">
+                                <span class="content">Oregairu 5</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="gallery-cell">
+                            <img src="static/img/books/oregairu6.jpg" alt="">
+                            <div class="after">
+                                <span class="content">Oregairu 6</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="gallery-cell">
+                            <img src="static/img/books/oregairu7.jpg" alt="">
+                            <div class="after">
+                                <span class="content">Oregairu 7</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="gallery-cell">
+                            <img src="static/img/books/oregairu8.jpg" alt="">
+                            <div class="after">
+                                <span class="content">Oregairu 8</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="gallery-cell">
+                            <img src="static/img/books/oregairu9.jpg" alt="">
+                            <div class="after">
+                                <span class="content">Oregairu 9</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="gallery-cell">
+                            <img src="static/img/books/oregairu10.jpg" alt="">
+                            <div class="after">
+                                <span class="content">Oregairu 10</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="gallery-cell">
+                            <img src="static/img/books/oregairu11.jpg" alt="">
+                            <div class="after">
+                                <span class="content">Oregairu 11</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="gallery-cell">
+                            <img src="static/img/books/oregairu12.jpg" alt="">
+                            <div class="after">
+                                <span class="content">Oregairu 12</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="gallery-cell">
+                            <img src="static/img/books/oregairu13.jpg" alt="">
+                            <div class="after">
+                                <span class="content">Oregairu 13</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="gallery-cell">
+                            <img src="static/img/books/oregairu14.jpg" alt="">
+                            <div class="after">
+                                <span class="content">Oregairu 14</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-lit text-light">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="container py-5" style="border-top: 1px solid black;">
+    <footer class="container-fluid py-5" style="border-top: 1px solid black;">
         <div class="row">
             <div class="col-12 col-md">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -147,8 +420,8 @@
     <script src="static/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
     <script src="static/flickity/flickity.pkgd.min.js"></script>
     <script>
-    $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
+    $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
         })
     </script>
 </body>

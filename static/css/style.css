@@ -27,6 +27,16 @@ nav {
     color: #9f0000;
 }
 
+.btn-lit {
+    background: #9f0000;
+    color: white;
+}
+
+.btn-lit:hover {
+    background: #c00404;
+    color: whitesmoke;
+}
+
 .text-lit:hover {
     color: #cc2626;
 }
@@ -45,17 +55,17 @@ nav {
     margin-left: 90px;
     font-weight: bold;
 }
-/* 
-.content {
-    overflow-y: scroll;
-    width: auto;
-    max-height: 1000px;
+
+#book-info {
+    margin-bottom: 10em;
 }
 
-.content img {
-    width: 850px;
+#book-info label {
+    font-weight: bold;
+    width: 8em;
+    padding: .5em;
 }
- */
+
 .gallery {
     background: #EEE;
     margin: 2em 0;
@@ -92,6 +102,7 @@ nav {
 
 .gallery-cell .after .content {
     position: absolute;
+    width: 100%;
     background: #9f0000;
     bottom: 0;
     font-family: sans-serif;
@@ -184,4 +195,36 @@ nav {
     border-bottom: 6px solid #ffffff;
     border-left: 6px solid transparent;
     content: '';
+}
+
+.container-index {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container-index {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-index {
+    max-width: 820px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-index {
+    max-width: 1060px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-index {
+    max-width: 1440px;
+  }
 }
