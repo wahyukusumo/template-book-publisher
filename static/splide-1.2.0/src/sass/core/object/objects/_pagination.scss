@@ -1,0 +1,16 @@
+.splide {
+  &__pagination {
+    display: inline-flex;
+    align-items: center;
+
+    li {
+      list-style-type: none;
+      display: inline-block;
+    }
+
+    &__page {
+      &.is-active {
+      }
+    }
+  }
+}
