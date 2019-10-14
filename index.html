@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="static/bootstrap-4.3.1-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="static/flickity/flickity.css">
+    <link rel="stylesheet" href="static/swiper-5.0.4/css/swiper.min.css">
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 
@@ -94,102 +94,85 @@
         <div class="section">
             <img src="static/img/tag/release-next-week.svg" class="tag-svg" alt="tag-release-next-week">
         </div>
-        <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true }'> 
-            <a href="#">
-                <div class="gallery-cell">
-                    <img src="static/img/books/bnha10.jpg" alt="">
-                    <div class="after">
-                        <span class="content">Boku no Hero Academia 10</span>
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="gallery-cell">
-                    <img src="static/img/books/bnha11.jpg" alt="">
+        <div id="swiper-large" class="swiper-container">
+            <div class="section">
+                <img src="static/img/tag/reccomendation.svg" class="tag-svg" alt="tag-category">
+            </div>
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide">
+                    <img data-src="static/img/books/bnha11.jpg" alt="" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-lit lazy-load"></div>
                     <div class="after">
                         <span class="content">Boku no Hero Academia 11</span>
                     </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="gallery-cell">
-                    <img src="static/img/books/bnha12.jpg" alt="">
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img data-src="static/img/books/bnha12.jpg" alt="" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-lit lazy-load"></div>
                     <div class="after">
                         <span class="content">Boku no Hero Academia 12</span>
                     </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="gallery-cell">
-                    <img src="static/img/books/bnha13.jpg" alt="">
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img data-src="static/img/books/bnha13.jpg" alt="" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-lit lazy-load"></div>
                     <div class="after">
                         <span class="content">Boku no Hero Academia 13</span>
                     </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="gallery-cell">
-                    <img src="static/img/books/bnha14.jpg" alt="">
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img data-src="static/img/books/bnha14.jpg" alt="" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-lit lazy-load"></div>
                     <div class="after">
                         <span class="content">Boku no Hero Academia 14</span>
                     </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="gallery-cell">
-                    <img src="static/img/books/bnha15.jpg" alt="">
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img data-src="static/img/books/bnha15.jpg" alt="" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-lit lazy-load"></div>
                     <div class="after">
                         <span class="content">Boku no Hero Academia 15</span>
                     </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="gallery-cell">
-                    <img src="static/img/books/bnha16.jpg" alt="">
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img data-src="static/img/books/bnha16.jpg" alt="" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-lit lazy-load"></div>
                     <div class="after">
                         <span class="content">Boku no Hero Academia 16</span>
                     </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="gallery-cell">
-                    <img src="static/img/books/bnha17.jpg" alt="">
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img data-src="static/img/books/bnha17.jpg" alt="" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-lit lazy-load"></div>
                     <div class="after">
                         <span class="content">Boku no Hero Academia 17</span>
                     </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="gallery-cell">
-                    <img src="static/img/books/bnha18.jpg" alt="">
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img data-src="static/img/books/bnha18.jpg" alt="" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-lit lazy-load"></div>
                     <div class="after">
                         <span class="content">Boku no Hero Academia 18</span>
                     </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="gallery-cell">
-                    <img src="static/img/books/bnha19.jpg" alt="">
-                    <div class="after">
-                        <span class="content">Boku no Hero Academia 19</span>
-                    </div>
-                </div>
-            </a>
+                </a>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
 
         <!-- Side and Main -->
         <div class="row justify-content-center mt-3">
             <div class="col-md-4">
-                <div id="published-last-week" class="card">
+                <div class="card">
                     <div class="card-body">
                         <!-- Navigation -->
                         <ul class="nav nav-justified nav-tabs mb-3" id="myTab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link nav-font text-lit active" id="released-tab" data-toggle="tab" href="#released" role="tab"
+                                <a class="nav-link font-lit text-lit active" id="released-tab" data-toggle="tab" href="#released" role="tab"
                                     aria-controls="released" aria-selected="true">Released</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-font text-lit" id="reprint-tab" data-toggle="tab" href="#reprint" role="tab"
+                                <a class="nav-link font-lit text-lit" id="reprint-tab" data-toggle="tab" href="#reprint" role="tab"
                                     aria-controls="reprint" aria-selected="false">Reprint</a>
                             </li>
                         </ul>
@@ -216,22 +199,29 @@
                             <!-- Reprint -->
                             <div class="tab-pane fade" id="reprint" role="tabpanel" aria-labelledby="reprint-tab">
                                 <div class="flex-container">
-                                    <a href="#"><img src="static/img/books/oregairu1.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="Oregairu 1"></a>
-                                    <a href="#"><img src="static/img/books/oregairu2.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="Oregairu 2"></a>
-                                    <a href="#"><img src="static/img/books/oregairu3.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="Oregairu 3"></a>
-                                    <a href="#"><img src="static/img/books/oregairu4.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="Oregairu 4"></a>
-                                    <a href="#"><img src="static/img/books/oregairu5.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="Oregairu 5"></a>
-                                    <a href="#"><img src="static/img/books/oregairu6.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="Oregairu 6"></a>
-                                    <a href="#"><img src="static/img/books/oregairu7.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="Oregairu 7"></a>
-                                    <a href="#"><img src="static/img/books/oregairu8.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="Oregairu 8"></a>
-                                    <a href="#"><img src="static/img/books/oregairu9.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="Oregairu 9"></a>
-                                    <a href="#"><img src="static/img/books/oregairu10.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="Oregairu 10"></a>
-                                    <a href="#"><img src="static/img/books/oregairu11.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="Oregairu 11"></a>
-                                    <a href="#"><img src="static/img/books/oregairu12.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="Oregairu 12"></a>
-                                    <a href="#"><img src="static/img/books/oregairu13.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="Oregairu 13"></a>
-                                    <a href="#"><img src="static/img/books/oregairu14.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="Oregairu 14"></a>
+                                    <a href="#"><img src="static/img/books/oregairu1.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 1"></a>
+                                    <a href="#"><img src="static/img/books/oregairu2.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 2"></a>
+                                    <a href="#"><img src="static/img/books/oregairu3.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 3"></a>
+                                    <a href="#"><img src="static/img/books/oregairu4.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 4"></a>
+                                    <a href="#"><img src="static/img/books/oregairu5.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 5"></a>
+                                    <a href="#"><img src="static/img/books/oregairu6.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 6"></a>
+                                    <a href="#"><img src="static/img/books/oregairu7.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 7"></a>
+                                    <a href="#"><img src="static/img/books/oregairu8.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 8"></a>
+                                    <a href="#"><img src="static/img/books/oregairu9.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 9"></a>
+                                    <a href="#"><img src="static/img/books/oregairu10.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 10"></a>
+                                    <a href="#"><img src="static/img/books/oregairu11.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 11"></a>
+                                    <a href="#"><img src="static/img/books/oregairu12.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 12"></a>
+                                    <a href="#"><img src="static/img/books/oregairu13.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 13"></a>
+                                    <a href="#"><img src="static/img/books/oregairu14.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 14"></a>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="btn-group btn-block" role="group">
+                            <button type="button" class="btn btn-lit font-lit" data-toggle="modal" data-target="#modalReleased">Released</button>
+                            <button type="button" class="btn btn-lit font-lit" data-toggle="modal" data-target="#modalReprint">Reprint</button>
                         </div>
                     </div>
                 </div>
@@ -241,25 +231,25 @@
                 <!-- Category -->
                 <img src="static/img/tag/category.svg" class="tag-svg" alt="tag-category">
                 <div class="flex-container">
-                    <a href="#" class="kind">
+                    <a href="#" class="category">
                         <img src="static/img/category/swords.svg" width="50" alt="">
                     </a>
-                    <a href="#" class="kind">
+                    <a href="#" class="category">
                         <img src="static/img/category/art.svg" width="50" alt="">
                     </a>
-                    <a href="#" class="kind">
+                    <a href="#" class="category">
                         <img src="static/img/category/blackboard.svg" width="50" alt="">
                     </a>
-                    <a href="#" class="kind">
+                    <a href="#" class="category">
                         <img src="static/img/category/hiking.svg" width="50" alt="">
                     </a>
-                    <a href="#" class="kind">
+                    <a href="#" class="category">
                         <img src="static/img/category/physics.svg" width="50" alt="">
                     </a>
-                    <a href="#" class="kind">
+                    <a href="#" class="category">
                         <img src="static/img/category/time.svg" width="50" alt="">
                     </a>
-                    <a href="#" class="kind">
+                    <a href="#" class="category">
                         <img src="static/img/category/world.svg" width="50" alt="">
                     </a>
                 </div>
@@ -295,6 +285,70 @@
                             Per eros in venenatis volutpat lobortis fusce diam cum ac nisl ornare laoreet imperdiet
                             euismod class nullam.
                         </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Released -->
+    <div class="modal fade" id="modalReleased" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-light text-light">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Released</h5>
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="flex-container">
+                        <a href="#"><img src="static/img/books/gin1.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="Gintama 1"></a>
+                        <a href="#"><img src="static/img/books/bnha1.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="Boku no Hero Academia 1"></a>
+                        <a href="#"><img src="static/img/books/bnha2.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="Boku no Hero Academia 2"></a>
+                        <a href="#"><img src="static/img/books/bnha3.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="Boku no Hero Academia 3"></a>
+                        <a href="#"><img src="static/img/books/bnha4.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="Boku no Hero Academia 4"></a>
+                        <a href="#"><img src="static/img/books/bnha5.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="Boku no Hero Academia 5"></a>
+                        <a href="#"><img src="static/img/books/bnha6.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="Boku no Hero Academia 6"></a>
+                        <a href="#"><img src="static/img/books/bnha7.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="Boku no Hero Academia 7"></a>
+                        <a href="#"><img src="static/img/books/bnha8.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="Boku no Hero Academia 8"></a>
+                        <a href="#"><img src="static/img/books/bnha9.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="Boku no Hero Academia 9"></a>
+                        <a href="#"><img src="static/img/books/k1.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="K-ON! 1"></a>
+                        <a href="#"><img src="static/img/books/k2.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="K-ON! 2"></a>
+                        <a href="#"><img src="static/img/books/k3.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="K-ON! 3"></a>
+                        <a href="#"><img src="static/img/books/k4.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="K-ON! 4"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Reprint -->
+    <div class="modal fade" id="modalReprint" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-lit text-light">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Released</h5>
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="flex-container">
+                        <a href="#"><img src="static/img/books/oregairu1.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 1"></a>
+                        <a href="#"><img src="static/img/books/oregairu2.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 2"></a>
+                        <a href="#"><img src="static/img/books/oregairu3.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 3"></a>
+                        <a href="#"><img src="static/img/books/oregairu4.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 4"></a>
+                        <a href="#"><img src="static/img/books/oregairu5.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 5"></a>
+                        <a href="#"><img src="static/img/books/oregairu6.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 6"></a>
+                        <a href="#"><img src="static/img/books/oregairu7.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 7"></a>
+                        <a href="#"><img src="static/img/books/oregairu8.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 8"></a>
+                        <a href="#"><img src="static/img/books/oregairu9.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 9"></a>
+                        <a href="#"><img src="static/img/books/oregairu10.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 10"></a>
+                        <a href="#"><img src="static/img/books/oregairu11.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 11"></a>
+                        <a href="#"><img src="static/img/books/oregairu12.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 12"></a>
+                        <a href="#"><img src="static/img/books/oregairu13.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 13"></a>
+                        <a href="#"><img src="static/img/books/oregairu14.jpg" alt="cover" data-toggle="tooltip" data-placement="top" title="My Youth Romantic Comedy Is Wrong, As I Expected 14"></a>
                     </div>
                 </div>
             </div>
@@ -362,12 +416,8 @@
     <script src="static/bootstrap-4.3.1-dist/js/jquery-3.4.1.min.js"></script>
     <script src="static/bootstrap-4.3.1-dist/js/popper.min.js"></script>
     <script src="static/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-    <script src="static/flickity/flickity.pkgd.min.js"></script>
-    <script>
-    $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
+    <script src="static/swiper-5.0.4/js/swiper.min.js"></script>
+    <script src="static/js/main.js"></script>
 </body>
 
 </html>

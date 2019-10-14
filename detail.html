@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="static/bootstrap-4.3.1-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="static/flickity/flickity.css">
-    <link rel="stylesheet" href="static/splide-1.2.0/dist/css/splide.min.css">
+    <link rel="stylesheet" href="static/swiper-5.0.4/css/swiper.min.css">
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
@@ -59,89 +58,111 @@
                     <div class="card-body">
                         <img src="static/img/books/ueno1.jpg" alt="" style="width: 100%">
                         <button class="btn btn-lit btn-block mt-3" data-toggle="modal" data-target="#BookStoreStock">Check Stock in Book Store</button>
-                        <button class="btn btn-info btn-block"data-toggle="modal" data-target="#exampleModalCenter">Preview</button>
+                        <button class="btn btn-info btn-block" data-toggle="modal" data-target="#exampleModalCenter">Preview</button>
                     </div>
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <div id="information">
+                        <div id="book-info">
                             <h2 class="font-weight-bold">How Clumsy You Are, Miss Ueno 1</h2>
                             <hr>
-                            
-                            <div id="book-info">
-                                <label for="artist">Artist</label>
-                                <span><b>:</b> Tugeneko</span>
-                                <br>
-                                <label for="pages">Pages</label>
-                                <span><b>:</b> 213 pages</span>
-                                <br>
-                                <label for="dimension">Dimension</label>
-                                <span><b>:</b> 21cm x 11cm</span>
-                                <br>
-                                <label for="genre">Genre</label>
-                                <span><b>:</b> Slice of Life, Comedy, School Life</span>
-                                <br>
-                                <label for="price">Price</label>
-                                <span><b>:</b> $13</span>
-                                <br>
-                                <label for="sinopsis">Sinopsis :</label>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Aliquam sunt eum officiis eaque fugiat illum, sed modi excepturi voluptates aperiam autem nemo laboriosam,
-                                    quibusdam velit fugit alias optio tempora architecto!
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repellat at,
-                                    modi animi facilis suscipit amet iusto obcaecati minima enim adipisci sunt,
-                                    sed ab dolores est pariatur culpa praesentium iure!
-                                </p>
-                                <div class="alert alert-info mt-5" role="alert">
-                                    #HowClumsyYouAreMissUeno #tugeneko
-                                </div>
+                            <table class="table">
+                                <tr>
+                                    <th>Author</th>
+                                    <td>Tugeneko</td>
+                                </tr>
+                                <tr>
+                                    <th>Pages</th>
+                                    <td>213 pages</td>
+                                </tr>
+                                <tr>
+                                    <th>Dimension</th>
+                                    <td>21cm x 11cm</td>
+                                </tr>
+                                <tr>
+                                    <th>Genre</th>
+                                    <td>Comedy, Slice of Life, School Life</td>
+                                </tr>
+                                <tr>
+                                    <th>Publish Date</th>
+                                    <td>30 October, 2019</td>
+                                </tr>
+                                <tr>
+                                    <th>Price</th>
+                                    <td>$13</td>
+                                </tr>
+                            </table>
+                            <!-- <label for="artist">Artist</label>
+                            <span><b>:</b> Tugeneko</span>
+                            <br>
+                            <label for="pages">Pages</label>
+                            <span><b>:</b> 213 pages</span>
+                            <br>
+                            <label for="dimension">Dimension</label>
+                            <span><b>:</b> 21cm x 11cm</span>
+                            <br>
+                            <label for="genre">Genre</label>
+                            <span><b>:</b> Slice of Life, Comedy, School Life</span>
+                            <br>
+                            <label for="publish-date">Publish Date</label>
+                            <span><b>:</b> 30 October, 2019</span>
+                            <br>
+                            <label for="price">Price</label>
+                            <span><b>:</b> $13</span> -->
+                            <br>
+                            <label for="sinopsis">Sinopsis :</label>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Aliquam sunt eum officiis eaque fugiat illum, sed modi excepturi voluptates aperiam autem nemo laboriosam,
+                                quibusdam velit fugit alias optio tempora architecto!Sed eleifend lectus id semper accumsan. Sed lobortis id ligula eget blandit. Integer interdum iaculis nunc, sed
+                                porttitor magna tincidunt in. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam lobortis
+                                accumsan tempor. Aliquam sollicitudin pulvinar est, quis convallis tellus.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repellat at,
+                                modi animi facilis suscipit amet iusto obcaecati minima enim adipisci sunt,
+                                sed ab dolores est pariatur culpa praesentium iure!
+                            </p>
+                            <div class="alert alert-info mt-5" role="alert">
+                                #HowClumsyYouAreMissUeno #tugeneko
                             </div>
                         </div>
                         <div id="another-volume">
-                            <div class="section">
-                                <img src="static/img/tag/another-volume.svg" class="tag-svg" alt="tag-category">
-                            </div>
-                            <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true }'> 
-                                <a href="#">
-                                    <div class="gallery-cell">
+                            <div id="swiper-small" class="swiper-container">
+                                <div class="section">
+                                    <img src="static/img/tag/another-volume.svg" class="tag-svg" alt="tag-category">
+                                </div>
+                                <div class="swiper-wrapper">
+                                    <a href="#" class="swiper-slide">
                                         <img src="static/img/books/ueno2.jpg" alt="">
                                         <div class="after">
                                             <span class="content">How Clumsy You Are, Miss Ueno 2</span>
                                         </div>
-                                    </div>
-                                </a>
-                                <a href="#">
-                                    <div class="gallery-cell">
+                                    </a>
+                                    <a href="#" class="swiper-slide">
                                         <img src="static/img/books/ueno3.jpg" alt="">
                                         <div class="after">
                                             <span class="content">How Clumsy You Are, Miss Ueno 3</span>
                                         </div>
-                                    </div>
-                                </a>
-                                <a href="#">
-                                    <div class="gallery-cell">
+                                    </a>
+                                    <a href="#" class="swiper-slide">
                                         <img src="static/img/books/ueno4.jpg" alt="">
                                         <div class="after">
                                             <span class="content">How Clumsy You Are, Miss Ueno 4</span>
                                         </div>
-                                    </div>
-                                </a>
-                                <a href="#">
-                                    <div class="gallery-cell">
+                                    </a>
+                                    <a href="#" class="swiper-slide">
                                         <img src="static/img/books/ueno5.jpg" alt="">
                                         <div class="after">
                                             <span class="content">How Clumsy You Are, Miss Ueno 5</span>
                                         </div>
-                                    </div>
-                                </a>
-                                <a href="#">
-                                    <div class="gallery-cell">
+                                    </a>
+                                    <a href="#" class="swiper-slide">
                                         <img src="static/img/books/ueno6.jpg" alt="">
                                         <div class="after">
                                             <span class="content">How Clumsy You Are, Miss Ueno 6</span>
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination"></div>
                             </div>
                         </div>
                     </div>
@@ -149,178 +170,71 @@
             </div>
         </div>
         <hr>
-        <!-- <div id="reccomendation">
-            <div class="section">
-                <img src="static/img/tag/reccomendation.svg" class="tag-svg" alt="tag-category">
-            </div>
-            <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true }'> 
-                <a href="#">
-                    <div class="gallery-cell">
-                        <img src="static/img/books/bnha10.jpg" alt="">
-                        <div class="after">
-                            <span class="content">Boku no Hero Academia 10</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="gallery-cell">
-                        <img src="static/img/books/bnha11.jpg" alt="">
-                        <div class="after">
-                            <span class="content">Boku no Hero Academia 11</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="gallery-cell">
-                        <img src="static/img/books/bnha12.jpg" alt="">
-                        <div class="after">
-                            <span class="content">Boku no Hero Academia 12</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="gallery-cell">
-                        <img src="static/img/books/bnha13.jpg" alt="">
-                        <div class="after">
-                            <span class="content">Boku no Hero Academia 13</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="gallery-cell">
-                        <img src="static/img/books/bnha14.jpg" alt="">
-                        <div class="after">
-                            <span class="content">Boku no Hero Academia 14</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="gallery-cell">
-                        <img src="static/img/books/bnha15.jpg" alt="">
-                        <div class="after">
-                            <span class="content">Boku no Hero Academia 15</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="gallery-cell">
-                        <img src="static/img/books/bnha16.jpg" alt="">
-                        <div class="after">
-                            <span class="content">Boku no Hero Academia 16</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="gallery-cell">
-                        <img src="static/img/books/bnha17.jpg" alt="">
-                        <div class="after">
-                            <span class="content">Boku no Hero Academia 17</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="gallery-cell">
-                        <img src="static/img/books/bnha18.jpg" alt="">
-                        <div class="after">
-                            <span class="content">Boku no Hero Academia 18</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="gallery-cell">
-                        <img src="static/img/books/bnha19.jpg" alt="">
-                        <div class="after">
-                            <span class="content">Boku no Hero Academia 19</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div> -->
 
-        <div class="splide">
+        <div id="swiper-large" class="swiper-container">
             <div class="section">
                 <img src="static/img/tag/reccomendation.svg" class="tag-svg" alt="tag-category">
             </div>
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <a href="#">
-                        <li class="splide__slide"><img src="static/img/books/oregairu1.jpg" alt="">
-                            <div class="after">
-                                <span class="content">My Youth Romantic Comedy Is Wrong, As I Expected 1</span>
-                            </div>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="splide__slide"><img src="static/img/books/oregairu2.jpg" alt="">
-                            <div class="after">
-                                <span class="content">My Youth Romantic Comedy Is Wrong, As I Expected 2</span>
-                            </div>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="splide__slide"><img src="static/img/books/oregairu3.jpg" alt="">
-                            <div class="after">
-                                <span class="content">My Youth Romantic Comedy Is Wrong, As I Expected 3</span>
-                            </div>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="splide__slide"><img src="static/img/books/oregairu4.jpg" alt="">
-                            <div class="after">
-                                <span class="content">My Youth Romantic Comedy Is Wrong, As I Expected 4</span>
-                            </div>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="splide__slide"><img src="static/img/books/oregairu5.jpg" alt="">
-                            <div class="after">
-                                <span class="content">My Youth Romantic Comedy Is Wrong, As I Expected 5</span>
-                            </div>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="splide__slide"><img src="static/img/books/oregairu6.jpg" alt="">
-                            <div class="after">
-                                <span class="content">My Youth Romantic Comedy Is Wrong, As I Expected 6</span>
-                            </div>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="splide__slide"><img src="static/img/books/oregairu7.jpg" alt="">
-                            <div class="after">
-                                <span class="content">My Youth Romantic Comedy Is Wrong, As I Expected 7</span>
-                            </div>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="splide__slide"><img src="static/img/books/oregairu8.jpg" alt="">
-                            <div class="after">
-                                <span class="content">My Youth Romantic Comedy Is Wrong, As I Expected 8</span>
-                            </div>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="splide__slide"><img src="static/img/books/oregairu9.jpg" alt="">
-                            <div class="after">
-                                <span class="content">My Youth Romantic Comedy Is Wrong, As I Expected 9</span>
-                            </div>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="splide__slide"><img src="static/img/books/oregairu10.jpg" alt="">
-                            <div class="after">
-                                <span class="content">My Youth Romantic Comedy Is Wrong, As I Expected 10</span>
-                            </div>
-                        </li>
-                    </a><a href="#">
-                        <li class="splide__slide"><img src="static/img/books/oregairu11.jpg" alt="">
-                            <div class="after">
-                                <span class="content">My Youth Romantic Comedy Is Wrong, As I Expected 11</span>
-                            </div>
-                        </li>
-                    </a>
-                </ul>
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide">
+                    <img data-src="static/img/books/oregairu1.jpg" alt="" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-lit lazy-load"></div>
+                    <div class="after">
+                        <span class="content">My Youth Romantic Comedy Is Wrong, As I Expected 1</span>
+                    </div>
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img data-src="static/img/books/oregairu2.jpg" alt="" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-lit lazy-load"></div>
+                    <div class="after">
+                        <span class="content">My Youth Romantic Comedy Is Wrong, As I Expected 1</span>
+                    </div>
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img data-src="static/img/books/oregairu3.jpg" alt="" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-lit lazy-load"></div>
+                    <div class="after">
+                        <span class="content">My Youth Romantic Comedy Is Wrong, As I Expected 1</span>
+                    </div>
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img data-src="static/img/books/oregairu4.jpg" alt="" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-lit lazy-load"></div>
+                    <div class="after">
+                        <span class="content">My Youth Romantic Comedy Is Wrong, As I Expected 1</span>
+                    </div>
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img data-src="static/img/books/oregairu5.jpg" alt="" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-lit lazy-load"></div>
+                    <div class="after">
+                        <span class="content">My Youth Romantic Comedy Is Wrong, As I Expected 1</span>
+                    </div>
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img data-src="static/img/books/oregairu6.jpg" alt="" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-lit lazy-load"></div>
+                    <div class="after">
+                        <span class="content">My Youth Romantic Comedy Is Wrong, As I Expected 1</span>
+                    </div>
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img data-src="static/img/books/oregairu7.jpg" alt="" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-lit lazy-load"></div>
+                    <div class="after">
+                        <span class="content">My Youth Romantic Comedy Is Wrong, As I Expected 1</span>
+                    </div>
+                </a>
+                <a href="#" class="swiper-slide">
+                    <img data-src="static/img/books/oregairu8.jpg" alt="" class="swiper-lazy">
+                    <div class="swiper-lazy-preloader swiper-lazy-preloader-lit lazy-load"></div>
+                    <div class="after">
+                        <span class="content">My Youth Romantic Comedy Is Wrong, As I Expected 1</span>
+                    </div>
+                </a>
             </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
     </div>
 
@@ -480,7 +394,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="container-fluid py-5" style="border-top: 1px solid black;">
+    <footer class="container-fluid py-5" style="border-top: 1px solid #000;">
         <div class="row">
             <div class="col-12 col-md">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -540,41 +454,7 @@
     <script src="static/bootstrap-4.3.1-dist/js/jquery-3.4.1.min.js"></script>
     <script src="static/bootstrap-4.3.1-dist/js/popper.min.js"></script>
     <script src="static/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-    <script src="static/flickity/flickity.pkgd.min.js"></script>
-    <script src="static/splide-1.2.0/dist/js/splide.min.js"></script>
-    <script>
-    
-    new Splide('.splide', {
-            perPage: 7,
-            type: 'loop',
-        }).mount();
-
-    $('#myModal').on('shown.bs.modal', function () {
-            $('#myInput').trigger('focus')
-        })
-    
-    $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-
-    function myFunction() {
-        var input, filter, table, tr, td, i, txtValue;
-        input = document.getElementById("searchBookStore");
-        filter = input.value.toUpperCase();
-        table = document.getElementById("tableBookStore");
-        tr = table.getElementsByTagName("tr");
-        for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[0];
-            if (td) {
-                txtValue = td.textContent || td.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    tr[i].style.display = "";
-                } else {
-                    tr[i].style.display = "none";
-                }
-            }
-        }
-    }
-    </script>
+    <script src="static/swiper-5.0.4/js/swiper.min.js"></script>
+    <script src="static/js/main.js"></script>
 </body>
 </html>

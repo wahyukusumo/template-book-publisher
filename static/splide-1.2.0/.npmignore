@@ -1,6 +1,0 @@
-node_modules/
-
-.editorconfig
-
-tests/
-jest.config.js
