@@ -14,7 +14,7 @@ body {
 }
 
 nav {
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Lemon/Milk', sans-serif;
     text-transform: uppercase;
     font-size: 1em;
 }
@@ -88,6 +88,24 @@ nav {
     justify-content: center;
 }
 
+.flex-container.list-item a {
+    padding: 5px;
+}
+
+.flex-container > a.list {
+    text-decoration: none;
+}
+
+.flex-container > a .item {
+    text-align: center;
+    border: 1px solid #9f0000;
+}
+
+.flex-container > a .item img {
+    width: 150px;
+}
+
+
 .flex-container > a img {
     width: 70px;
     margin: 5px;
@@ -118,6 +136,21 @@ nav {
     filter: brightness(100%);
 }
 
+.tag-svg {
+    height: 2.5em;
+    width: auto;
+}
+
+.book-title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+footer {
+    border-top: 1px solid #e6e3e3;
+    background: white;
+}
+
 /* Responsive Style */
 
 @media (max-width: 576px) {
@@ -128,6 +161,27 @@ nav {
 
     .flex-container > .category img {
         width: 3em;
+    }
+
+    .tag-svg {
+        height: 1.5em;
+        width: auto;
+    }
+
+    .panel-small {
+        display: block;
+    }
+
+    .panel-large {
+        display: none;
+    }
+
+    .swiper-slide .after .content {
+        font-size: 1em;
+    }
+
+    .book-title {
+        font-size: 1.3em;
     }
 }
 
@@ -140,6 +194,23 @@ nav {
     .flex-container > .category img {
         width: 3em;
     }
+
+    .tag-svg {
+        height: 2em;
+        width: auto;
+    }
+
+    .panel-small {
+        display: none;
+    }
+
+    .panel-large {
+        display: block;
+    }
+
+    /* .book-title {
+        font-size: 1.5em;
+    } */
 }
 
 @media (min-width: 768px) {
@@ -186,11 +257,6 @@ nav {
 
 .bs-tooltip-auto[x-placement^=top] .arrow::before,.bs-tooltip-top .arrow::before { 
     border-top-color: #530000!important;
-}
-
-.tag-svg {
-    height: 2.5em;
-    width: auto;
 }
 
 .dropdown-menu:before {
@@ -245,6 +311,20 @@ nav {
 @media (min-width: 1200px) {
     .container-index {
         max-width: 1440px;
+    }
+}
+
+.borderless td, .borderless th {
+    border: none;
+}
+
+.card-columns {
+    @include media-breakpoint-only(lg) {
+        column-count: 4;
+    }
+
+    @include media-breakpoint-only(xl) {
+        column-count: 5;
     }
 }
 

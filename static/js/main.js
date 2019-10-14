@@ -95,6 +95,10 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
 
+$(function() {
+    $('.lazy').Lazy();
+});
+
 function myFunction() {
     var input, filter, table, tr, td, i, txtValue;
     input = document.getElementById("searchBookStore");
