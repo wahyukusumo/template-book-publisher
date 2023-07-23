@@ -96,11 +96,11 @@ $(function () {
 })
 
 $(function() {
-    $('.lazy').Lazy();
+    $('.lazy').lazy();
 });
 
-function myFunction() {
-    var input, filter, table, tr, td, i, txtValue;
+function findList() {
+    let input, filter, table, tr, td, i, txtValue;
     input = document.getElementById("searchBookStore");
     filter = input.value.toUpperCase();
     table = document.getElementById("tableBookStore");

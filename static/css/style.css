@@ -13,8 +13,9 @@ body {
     background: whitesmoke;
 }
 
-nav {
-    font-family: 'Lemon/Milk', sans-serif;
+.nav-lit {
+    /* font-family: 'Lemon/Milk', sans-serif; */
+    font-family: 'Norwester', sans-serif;
     text-transform: uppercase;
     font-size: 1em;
 }
@@ -99,8 +100,8 @@ nav {
 
 .flex-container > .category {
     background: linear-gradient(-45deg, #860000 0%, #860000 49%, #9f0000 49%, #9f0000 100%);
-    margin: 10px;
-    padding: 10px;
+    margin: 2px;
+    padding: 2px;
     text-align: center;
     transition: .3s;
 }
@@ -110,8 +111,8 @@ nav {
     transition: .3s;
 }
 
-.flex-container > .category img {
-    width: 5em;
+.flex-container > a.category img {
+    width: 35px;
 }
 
 .flex-container > .category img:hover {
@@ -253,7 +254,7 @@ footer {
         margin: 5px;
         padding: 5px;
     }
-    
+
     .flex-container > .category img {
         width: 2.7em;
     }
@@ -275,7 +276,7 @@ footer {
         margin: 10px;
         padding: 10px;
     }
-    
+
     .flex-container > .category img {
         width: 5em;
     }
@@ -284,14 +285,21 @@ footer {
 /* Bootstrap Overide */
 
 .tooltip-inner {
-    background: #9f0000;
+    background: linear-gradient(-45deg, #860000 0%, #860000 49%, #9f0000 49%, #9f0000 100%);
     border-radius: 0;
     padding: .5em 1em;
-    border-bottom: 5px solid #530000;
 }
 
-.bs-tooltip-auto[x-placement^=top] .arrow::before,.bs-tooltip-top .arrow::before { 
+.tooltip {
+    font-weight: 700;
+}
+
+.bs-tooltip-auto[x-placement^=top] .arrow::before,.bs-tooltip-top .arrow::before {
     border-top-color: #530000!important;
+}
+
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before,.bs-tooltip-bottom .arrow::before {
+    border-bottom-color: #530000!important;
 }
 
 .dropdown-menu:before {
@@ -305,7 +313,7 @@ footer {
     border-bottom-color: rgba(0, 0, 0, 0.2);
     content: '';
 }
-  
+
 .dropdown-menu:after {
     position: absolute;
     top: -6px;
@@ -356,7 +364,7 @@ footer {
 .card-deck {
     display: flex;
     justify-content: flex-start;
-    flex-flow: row wrap; 
+    flex-flow: row wrap;
     align-items: stretch;
 }
 
@@ -372,6 +380,10 @@ footer {
     width: 100%;
     height: auto;
     padding-bottom: 2em;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #9f0000;
 }
 
 .swiper-slide img {
